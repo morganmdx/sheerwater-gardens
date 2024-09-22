@@ -63,3 +63,33 @@ function sheerwater_gardens_widgets_init() {
 	);
 }
 add_action( 'widgets_init', 'sheerwater_gardens_widgets_init' );
+
+
+/**
+ * Enqueue scripts and styles.
+ *
+ * @since Twenty Fifteen 1.0
+ */
+function sheerwater_gardens_scripts() {
+wp_enqueue_script(
+    'sheerwater_gardens-script',
+    get_template_directory_uri() . '/js/functions.js',
+    array( 'jquery' ),
+    '20221101',
+    array(
+        'in_footer' => false, // Because involves header.
+        'strategy'  => 'defer',
+    )
+);
+wp_localize_script(
+    'sheerwater_gardens-script',
+    'screenReaderText',
+    array(
+        /* translators: Hidden accessibility text. */
+        'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'sheerwater_gardens' ) . '</span>',
+        /* translators: Hidden accessibility text. */
+        'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'sheerwater_gardens' ) . '</span>',
+    )
+);
+}
+add_action( 'wp_enqueue_scripts', 'sheerwater_gardens_scripts' );
