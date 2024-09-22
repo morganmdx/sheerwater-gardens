@@ -91,5 +91,7 @@ wp_localize_script(
         'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'sheerwater_gardens' ) . '</span>',
     )
 );
+wp_enqueue_style( 'main_css', get_stylesheet_uri() );
+
 }
 add_action( 'wp_enqueue_scripts', 'sheerwater_gardens_scripts' );
