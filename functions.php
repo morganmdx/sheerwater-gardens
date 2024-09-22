@@ -27,8 +27,6 @@ function sheerwater_gardens_setup() {
  * @since Twenty Fourteen 1.0
  */
 function sheerwater_gardens_widgets_init() {
-	require get_template_directory() . '/inc/widgets.php';
-	register_widget( 'Twenty_Fourteen_Ephemera_Widget' );
 
 	register_sidebar(
 		array(
