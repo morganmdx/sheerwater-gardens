@@ -1,0 +1,17 @@
+/**
+ * Theme Name:        Sheerwater Gardens
+ * Description:       A bespoke made theme for Sheerwater Gardens Ltd by web developer, Morgan McLellan...
+ * Version:           1.0.0
+ * Author:            Morgan McLellan
+ * Author URI:        https://www.linkedin.com/in/morganmclellan99/
+ * Tags:              block-patterns, full-site-editing
+ * Text Domain:       sheerwater-gardens
+ * Domain Path:       /assets/lang
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+body {font-family: arial;}
