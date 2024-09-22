@@ -384,6 +384,7 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: button;
+    appearance: button;
 	cursor: pointer;
 }
 
@@ -399,6 +400,7 @@ input[type="radio"] {
 
 input[type="search"] {
 	-webkit-appearance: textfield;
+    appearance: textfield;
 }
 
 input[type="search"]::-webkit-search-decoration {
@@ -3072,6 +3074,7 @@ a.post-thumbnail:hover {
 
 .slider .featured-content .hentry {
 	-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 	display: none;
 	position: relative;
 }
