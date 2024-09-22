@@ -15,9 +15,53 @@ function sheerwater_gardens_setup() {
     // This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'primary'   => __( 'Top primary menu', 'twentyfourteen' ),
-				'secondary' => __( 'Secondary menu in left sidebar', 'twentyfourteen' ),
+				'primary'   => __( 'Top primary menu', 'sheerwater_gardens' ),
+				'secondary' => __( 'Secondary menu in left sidebar', 'sheerwater_gardens' ),
 			)
 		);
 }
 
+/**
+ * Register three Twenty Fourteen widget areas.
+ *
+ * @since Twenty Fourteen 1.0
+ */
+function sheerwater_gardens_widgets_init() {
+	require get_template_directory() . '/inc/widgets.php';
+	register_widget( 'Twenty_Fourteen_Ephemera_Widget' );
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Primary Sidebar', 'sheerwater_gardens' ),
+			'id'            => 'sidebar-1',
+			'description'   => __( 'Main sidebar that appears on the left.', 'sheerwater_gardens' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h1 class="widget-title">',
+			'after_title'   => '</h1>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => __( 'Content Sidebar', 'sheerwater_gardens' ),
+			'id'            => 'sidebar-2',
+			'description'   => __( 'Additional sidebar that appears on the right.', 'sheerwater_gardens' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h1 class="widget-title">',
+			'after_title'   => '</h1>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => __( 'Footer Widget Area', 'sheerwater_gardens' ),
+			'id'            => 'sidebar-3',
+			'description'   => __( 'Appears in the footer section of the site.', 'sheerwater_gardens' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h1 class="widget-title">',
+			'after_title'   => '</h1>',
+		)
+	);
+}
+add_action( 'widgets_init', 'sheerwater_gardens_widgets_init' );
