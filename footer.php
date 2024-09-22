@@ -6,7 +6,6 @@
  *
  * @package WordPress
  * @subpackage sheerwater_gardens
- * @since Twenty Fourteen 1.0
  */
 ?>
 
@@ -16,11 +15,7 @@
 
 	<div class="site-info">
 		<?php do_action( 'twentyfourteen_credits' ); ?>
-		<?php
-			if ( function_exists( 'the_privacy_policy_link' ) ) {
-				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
-			}
-		?>
+		
 		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sheerwater_gardens' ) ); ?>" class="imprint">
 		<?php
 			/* translators: %s: WordPress */
