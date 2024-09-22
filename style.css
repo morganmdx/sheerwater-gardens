@@ -66,13 +66,13 @@
     font-style: normal;
   }
   
-  .lato-bold {
+  .lato-bold, h3, h4 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
   
-  .lato-black {
+  .lato-black, h1, h2 {
     font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: normal;
