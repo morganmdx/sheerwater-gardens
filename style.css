@@ -3890,18 +3890,6 @@ a.post-thumbnail:hover {
 		width: 29.04761904%;
 	}
 
-	.site:before {
-		background-color: #000;
-		content: "";
-		display: block;
-		height: 100%;
-		min-height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 182px;
-		z-index: 2;
-	}
 
 	#secondary {
 		background-color: transparent;
