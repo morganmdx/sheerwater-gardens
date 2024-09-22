@@ -19,7 +19,7 @@ get_header(); ?>
 
     <div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-            test
+            <p>test</p>
         </div><!-- #content -->
 
     </div><!-- #primary -->
