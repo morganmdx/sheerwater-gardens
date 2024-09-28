@@ -19,7 +19,12 @@ get_header(); ?>
 		<div id="content" role="main">
 
         <?php
-			the_content();
+            // Start the loop
+            if ( have_posts() ) :
+                while ( have_posts() ) : the_post();
+                    the_content();
+                endwhile;
+            endif;
         ?>
 
 		</div><!-- #content -->
