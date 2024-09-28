@@ -15,8 +15,8 @@ get_header(); ?>
 
 <div id="main-content" class="main-content">
 
-	<div id="primary" class="content-area">
-		<div id="content" role="main">
+    <div id="primary" class="content-area">
+        <div id="content" role="main">
 
         <?php
             // Start the loop
@@ -27,9 +27,9 @@ get_header(); ?>
             endif;
         ?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
-	<?php get_sidebar( 'content' ); ?>
+        </div><!-- #content -->
+    </div><!-- #primary -->
+    <?php get_sidebar( 'content' ); ?>
 </div><!-- #main-content -->
 
 <?php
