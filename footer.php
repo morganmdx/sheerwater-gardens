@@ -14,7 +14,6 @@
 	<?php get_sidebar( 'footer' ); ?>
 
 	<div class="site-info">
-		<?php do_action( 'twentyfourteen_credits' ); ?>
 		
 		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sheerwater_gardens' ) ); ?>" class="imprint">
 		<?php
