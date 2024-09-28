@@ -98,3 +98,9 @@ wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap
 
 }
 add_action( 'wp_enqueue_scripts', 'sheerwater_gardens_scripts' );
+
+function sheerwater_gardens_add_elementor_support() {
+    // Add theme support for Elementor
+    add_theme_support( 'elementor' );
+}
+add_action( 'after_setup_theme', 'sheerwater_gardens_add_elementor_support' );
